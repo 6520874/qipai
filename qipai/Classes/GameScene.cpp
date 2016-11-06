@@ -1,7 +1,3 @@
-///////////////////////////////////////////////
-//制作者by:旋风   QQ:414755548
-//我是刚进公司的菜鸟,如果你有好的思路,欢迎为小弟提供一些意见和交流,谢谢!!
-///////////////////////////////////////////////
 #include "GameScene.h"
 #include "Poker.h"
 #include "Player.h"
@@ -529,7 +525,7 @@ bool GameScene::initAnNiu(){
 	m_menu->addChild(san,1,3);
 	m_menu->addChild(buJiao,1,4);
 	this->addChild(m_menu);
-	m_menu->setPosition(CCPointZero);
+	m_menu->setPosition(ccp(0, 0));
 	m_menu->setVisible(false);
 
 	x = size.width/2 - (fontWidth.width*2 + 20 * 3)/2;
@@ -548,7 +544,7 @@ bool GameScene::initAnNiu(){
 	m_chuPaiMenu = Menu::create();
 	m_chuPaiMenu->addChild(buChu,2,0);
 	m_chuPaiMenu->addChild(chuPai,2,1);
-	m_chuPaiMenu->setPosition(CCPointZero);
+	m_chuPaiMenu->setPosition(ccp(0, 0));
 	this->addChild(m_chuPaiMenu,1000);
 	m_chuPaiMenu->setVisible(false);
 	//你胜了的按钮
@@ -559,7 +555,7 @@ bool GameScene::initAnNiu(){
 
 	m_menuShengLi = Menu::create();
 	m_menuShengLi->addChild(shengLi);
-	m_menuShengLi->setPosition(CCPointZero);
+	m_menuShengLi->setPosition(ccp(0, 0));
 	this->addChild(m_menuShengLi);
 	m_menuShengLi->setVisible(false);
 	//你输了的按钮
@@ -570,7 +566,7 @@ bool GameScene::initAnNiu(){
 
 	m_menuShu = Menu::create();
 	m_menuShu->addChild(shu);
-	m_menuShu->setPosition(CCPointZero);
+	m_menuShu->setPosition(ccp(0, 0));
 	this->addChild(m_menuShu);
 	m_menuShu->setVisible(false);
 	return true;

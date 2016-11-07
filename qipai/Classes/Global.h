@@ -1,6 +1,5 @@
 #pragma once
 #include <vector>
-//test
 const int pkWidth = 71;//牌的宽
 const int pkHeight = 96;//牌的高
 const int pkJianJu = 20;//牌与牌之间的间距

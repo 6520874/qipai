@@ -84,8 +84,10 @@ bool GameScene::initBackGround(){
 	do 
 	{	
 		CCSprite* bk = CCSprite::create("res/bk.png");
+		bk->setScale(0.2);
 		this->addChild(bk,0);
 		bk->setAnchorPoint(ccp(0,0));
+		bk->setPositionX(40);
 
 		isRet = true;
 	} while (0);

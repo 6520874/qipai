@@ -1,7 +1,7 @@
 #pragma once
 #include "cocos2d.h"
 #include "Global.h"
-
+#include "Poker.h"
 USING_NS_CC;
 class GameScene;
 class Poker : public Sprite

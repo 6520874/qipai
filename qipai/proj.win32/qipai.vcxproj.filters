@@ -54,9 +54,6 @@
     </ResourceCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\Classes\Player.cpp.bak">
-      <Filter>src</Filter>
-    </None>
     <None Include="..\Resources\res\MainScene.csb">
       <Filter>resource</Filter>
     </None>

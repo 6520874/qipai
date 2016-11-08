@@ -16,12 +16,12 @@ bool AppDelegate::applicationDidFinishLaunching() {
     auto director = Director::getInstance();
     auto glview = director->getOpenGLView();
     if(!glview) {
-        glview = GLViewImpl::createWithRect("qipai", Rect(0, 0, 960, 640));
+        glview = GLViewImpl::createWithRect("qipai", Rect(0, 0,750,1334));
 
         director->setOpenGLView(glview);
     }
 	//改变分辨率
-	glview->setDesignResolutionSize(800, 600, ResolutionPolicy::NO_BORDER);
+	//glview->setDesignResolutionSize(800, 600, ResolutionPolicy::NO_BORDER);
     // turn on display FPS
     director->setDisplayStats(true);
 

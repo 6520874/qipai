@@ -45,13 +45,12 @@ void Player::updatePkWeiZhi()
 		Poker* pk = (Poker*)object;
 		if (m_iPlayerClass == 0 || m_iPlayerClass == 3)
 		{
-			//pk->showFront();
+	
 			pk->setPosition(ccp(x+num*pkJianJu+pkWidth/2,y));
 		}
 		else if(m_iPlayerClass == 1)
 		{
-			//pk->showFront();
-			//	pk->showLast();
+			
 			pk->setTexture("cardbg.png");
 			pk->setPosition(ccp(x+num*pkJianJu+pkWidth/2,y));
 		}
@@ -61,18 +60,5 @@ void Player::updatePkWeiZhi()
 		}
 		++num;
 	}
-	//改变牌的z值或牌的触摸优先
-  
-	 /*int i=m_arrPk->count()-1;
-	CCARRAY_FOREACH(m_arrPk,object){
-		Poker* pk = (Poker*)object;
-		//改变z值
-		if (m_iPlayerClass == 1 || m_iPlayerClass == 4 || m_iPlayerClass == 5)
-			pk->setZOrder(size.height - pk->getPositionY());
-		if (m_iPlayerClass == 0 || m_iPlayerClass == 3)
-			pk->setZOrder(pk->getPositionX());
-	
-
-	}*/
 
 }

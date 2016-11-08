@@ -34,11 +34,11 @@ bool GameScene::init(){
 	bool isRet = false;
 	do 
 	{
-	initBackGround();
-	initPlayer();
-	createPoker();
+		initBackGround();
+		initPlayer();
+		createPoker();
 		xiPai();
-	scheduleUpdate();
+		scheduleUpdate();
 		isRet = true;
 	} while (0);
 	return isRet;
@@ -55,9 +55,11 @@ bool GameScene::initBackGround(){
 	bool isRet = false;
 	do 
 	{	
+		Size size = Director::getInstance()->getWinSize();
 		Sprite* bk = Sprite::create("res/bk.png");
 		this->addChild(bk,0);
-		bk->setAnchorPoint(Vec2(0,0));
+
+		bk->setPosition(size.width/2,size.height/2);
 		isRet = true;
 	} while (0);
 	return isRet;
@@ -107,11 +109,11 @@ bool GameScene::xiPai(){
 bool GameScene::initPlayer(){
 	Size size = Director::getInstance()->getVisibleSize();
 	//设置主玩家的位置
-	m_player->setPoint(ccp(size.width/2,size.height/6));
+	m_player->setPoint(ccp(size.width/2,100));
 	m_player->setPlayerClass(0);
 
 	//设置电脑1的位置
-	m_npcOne->setPoint(ccp(size.width/2,size.height*0.97));
+	m_npcOne->setPoint(ccp(size.width/2,size.height*0.95));
 	m_npcOne->setPlayerClass(1);
 	
 	return true;

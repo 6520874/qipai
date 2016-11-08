@@ -11,6 +11,7 @@ public:
 	Poker();
 	~Poker();
 	static Poker* create(const char *pszFileName);
+	void showFront();
 	virtual void onEnter();
 	virtual void onExit();
 	virtual bool onTouchBegan(Touch *pTouch, Event *pEvent);

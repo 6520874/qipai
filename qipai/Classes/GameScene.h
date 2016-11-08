@@ -20,7 +20,7 @@ private:
 	void func(CCNode* pSender, void* pData);
     void update(float delta);
 	void MovePk(Player* play,Poker* pk);
-
+	bool xiPai();
 	CC_SYNTHESIZE(Player*,m_player,Player);//玩家
 	int m_iSendPk;//已发出第几张牌
 	Player* m_npcOne;//电脑1

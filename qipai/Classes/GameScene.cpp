@@ -37,6 +37,7 @@ bool GameScene::init(){
 	initBackGround();
 	initPlayer();
 	createPoker();
+		xiPai();
 	scheduleUpdate();
 		isRet = true;
 	} while (0);
@@ -74,8 +75,8 @@ bool GameScene::createPoker()
 		{
 			for (int j=0; j<10; ++j)
 			{
-			
-				pk = pk->create("res/1.png");
+				__String *s = __String::createWithFormat("%d.png",i+1);
+				pk = pk->create(s->getCString());
 				pk->setScale(0.1);
 				pk->setPosition(Vec2(size.width/2,size.height/2));
 				this->addChild(pk);
@@ -84,12 +85,25 @@ bool GameScene::createPoker()
 		}
 		
 		//创建道阴阳三张牌
-		//this->m_arrPokers->addObject(pk);
 		isRet = true;
 	} while (0);
 	return isRet;
 }
 
+bool GameScene::xiPai(){
+	bool isRet = false;
+	do 
+	{
+		for(int i=0; i<50; ++i)
+		{
+			Poker* pk1 = (Poker*)m_arrPokers->randomObject();
+			Poker* pk2 = (Poker*)m_arrPokers->randomObject();
+			m_arrPokers->exchangeObject(pk1,pk2);
+		}
+		isRet = true;
+	} while (0);
+	return isRet;
+}
 
 bool GameScene::initPlayer(){
 	Size size = Director::getInstance()->getVisibleSize();
@@ -98,23 +112,20 @@ bool GameScene::initPlayer(){
 	m_player->setPlayerClass(0);
 
 	//设置电脑1的位置
-	m_npcOne->setPoint(ccp(65,504));
+	m_npcOne->setPoint(ccp(size.width/2,size.height*0.97));
 	m_npcOne->setPlayerClass(1);
 	
 	return true;
-
 }
 
 
 void GameScene::update(float delta)
 {
-
 	switch (m_iState)
 	{
 	case 0:
 		SendPk();
 		break;
-
 	default:
 		break;
 	}
@@ -128,8 +139,16 @@ void GameScene::SendPk(){
 	CCCallFuncND* func;
 	float time = 0.05;
 
-	pk = (Poker*)m_arrPokers->objectAtIndex(m_iSendPk++);
-	MovePk(m_player,pk);
+	if(m_iSendPk<10)
+	{
+		pk = (Poker*)m_arrPokers->objectAtIndex(++m_iSendPk);
+		MovePk(m_player,pk);
+		
+		pk = (Poker*)m_arrPokers->objectAtIndex(++m_iSendPk);
+		pk->setFlipY(1);
+		MovePk(m_npcOne,pk);
+
+	}
 }
 
 
@@ -146,8 +165,8 @@ void GameScene::MovePk(Player* play,Poker* pk)
 }
 
 void GameScene::func(CCNode* pSender, void* pData){
-	//Player* play = (Player*)pData;
-	//play->updatePkWeiZhi();
+	Player* play = (Player*)pData;
+	play->updatePkWeiZhi();
 	//m_isSend = true;
 
 }

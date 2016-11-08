@@ -68,6 +68,186 @@
     <Image Include="..\Resources\res\poker.png">
       <Filter>resource</Filter>
     </Image>
+    <Image Include="..\Resources\res\1.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\res\2.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\res\3.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\res\4.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\res\5.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\res\bk2.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\res\cardbg.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\res\道.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\res\火1.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\res\火2.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\res\火3.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\res\火4.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\res\火5.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\res\火6.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\res\火7.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\res\火8.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\res\火9.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\res\火朱雀.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\res\金1.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\res\金2.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\res\金3.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\res\金4.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\res\金5.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\res\金6.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\res\金7.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\res\金8.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\res\金9.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\res\金白虎.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\res\木1.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\res\木2.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\res\木3.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\res\木4.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\res\木5.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\res\木6.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\res\木7.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\res\木8.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\res\木9.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\res\木青龙.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\res\水1.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\res\水2.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\res\水3.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\res\水4.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\res\水5.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\res\水6.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\res\水7.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\res\水8.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\res\水9.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\res\水玄武.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\res\土1.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\res\土2.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\res\土3.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\res\土4.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\res\土5.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\res\土6.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\res\土7.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\res\土8.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\res\土9.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\res\土麒麟.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\res\阳五行.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\res\阴五行.png">
+      <Filter>resource</Filter>
+    </Image>
   </ItemGroup>
   <ItemGroup>
     <Xml Include="..\Resources\res\strings.xml">

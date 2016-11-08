@@ -10,6 +10,12 @@ Poker::Poker(){
 Poker::~Poker(){
 
 }
+
+void Poker::showFront(){
+
+	//this->setTextureRect(CCRect(this->m_num*pkWidth,this->m_huaSe*pkHeight,pkWidth,pkHeight));
+
+}
 Poker* Poker::create(const char *pszFileName){
 	Poker* pk = new Poker();
 	if (pk && pk->initWithFile(pszFileName))

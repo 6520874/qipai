@@ -3,7 +3,7 @@
 #include "GameScene.h"
 
 
-Poker::Poker(){
+Poker::Poker():m_isSelect(false),m_isDianJi(false){
 
 }
 
@@ -41,6 +41,18 @@ bool Poker::onTouchBegan(Touch *pTouch, Event *pEvent){
 	Size size = getContentSize();
 	Rect rect(-size.width/2,-size.height/2,size.width,size.height);
 	Point ptouch = convertTouchToNodeSpaceAR(pTouch); //由英文之意转换 触摸 到 节点空间
+	
+		if(rect.containsPoint(ptouch))
+		{
+		 if(!m_isSelect){
+			SelectPkLuTou();
+		}
+		else{
+			
+			SelectPkSuoTou();
+		}
+		return true;
+		}
 
 	return false;
 	//如果这里返回false触摸不被吞掉
@@ -54,3 +66,18 @@ void Poker::onTouchEnded(Touch *pTouch, Event *pEvent){
 void Poker::onTouchCancelled(Touch *pTouch, Event *pEvent){
 
 }
+
+void Poker::SelectPkLuTou(){
+	//添加要出的牌
+	this->m_isSelect = true;
+	this->setPosition(ccp(getPositionX(),getPositionY()+10));
+	//m_gameMain->getArrPlayerOut()->addObject(this);
+	//m_gameMain->PlayerOutPaiXu(m_gameMain->getArrPlayerOut());
+}
+void Poker::SelectPkSuoTou(){
+	//从出牌中移除该牌
+	m_isSelect = false;
+	this->setPosition(ccp(getPositionX(),getPositionY()-10));
+	//m_gameMain->getArrPlayerOut()->removeObject(this);
+}
+

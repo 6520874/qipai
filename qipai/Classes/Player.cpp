@@ -18,14 +18,14 @@ Player::~Player()
 void Player::initPlayerPlace(Node *parent,int random2)
 {
 
-	__String  str = "1.png";
+	__String  str = "q1.png";
 
 	if(m_iPlayerClass==1)
 	{
-		str = "2.png";
+		str = "q2.png";
 	}
 	Sprite *pPlayer = Sprite::create(str.getCString());
-	pPlayer->setScale(0.1);
+	pPlayer->setScale(1);
 
 	 Size size = parent->getContentSize();
 

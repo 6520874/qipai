@@ -1,15 +1,18 @@
 #include "Poker.h"
 #include "Player.h"
 #include "GameScene.h"
-Poker::Poker():m_isSelect(false),m_isDianJi(false){
+
+
+Poker::Poker(){
 
 }
+
 Poker::~Poker(){
 
 }
-Poker* Poker::create(const char *pszFileName, const CCRect& rect){
+Poker* Poker::create(const char *pszFileName){
 	Poker* pk = new Poker();
-	if (pk && pk->initWithFile(pszFileName,rect))
+	if (pk && pk->initWithFile(pszFileName))
 	{
 		pk->autorelease();
 		return pk;
@@ -18,7 +21,7 @@ Poker* Poker::create(const char *pszFileName, const CCRect& rect){
 	return pk;
 }
 void Poker::onEnter(){
-	CCSprite::onEnter();
+	Sprite::onEnter();
 	//触摸响应注册
 	touchListener = EventListenerTouchOneByOne::create();//创建单点触摸事件监听器
 	touchListener->onTouchBegan = CC_CALLBACK_2(Poker::onTouchBegan, this);//触摸开始
@@ -30,70 +33,22 @@ void Poker::onEnter(){
 void Poker::onExit(){
 	//移除触摸响应
 	_eventDispatcher->removeEventListenersForTarget(this);
-	CCSprite::onExit();
+	Sprite::onExit();
 }
-bool Poker::onTouchBegan(CCTouch *pTouch, CCEvent *pEvent){
-	CCSize size = getContentSize();
-	CCRect rect(-size.width/2,-size.height/2,size.width,size.height);
-	CCPoint ptouch = convertTouchToNodeSpaceAR(pTouch); //由英文之意转换 触摸 到 节点空间
-	if(rect.containsPoint(ptouch) && m_isDianJi)
-	{
-		if(!m_isSelect){
-			SelectPkLuTou();
-		}
-		else{
-			
-			SelectPkSuoTou();
-		}
-		return true;
-	}
+bool Poker::onTouchBegan(Touch *pTouch, Event *pEvent){
+	Size size = getContentSize();
+	Rect rect(-size.width/2,-size.height/2,size.width,size.height);
+	Point ptouch = convertTouchToNodeSpaceAR(pTouch); //由英文之意转换 触摸 到 节点空间
+
 	return false;
 	//如果这里返回false触摸不被吞掉
 }
-void Poker::onTouchMoved(CCTouch *pTouch, CCEvent *pEvent){
+void Poker::onTouchMoved(Touch *pTouch, Event *pEvent){
 
 }
-void Poker::onTouchEnded(CCTouch *pTouch, CCEvent *pEvent){
+void Poker::onTouchEnded(Touch *pTouch, Event *pEvent){
 
 }
-void Poker::onTouchCancelled(CCTouch *pTouch, CCEvent *pEvent){
+void Poker::onTouchCancelled(Touch *pTouch, Event *pEvent){
 
-}
-void Poker::showFront(){
-	if(m_huaSe != Gui)
-		this->setTextureRect(CCRect(this->m_num*pkWidth,this->m_huaSe*pkHeight,pkWidth,pkHeight));
-	else
-		this->setTextureRect(CCRect((this->m_num-XiaoGui)*pkWidth,this->m_huaSe*pkHeight,pkWidth,pkHeight));
-}
-void Poker::showLast(){
-	this->setTextureRect(CCRect(PaiHaoBM*pkWidth,HuaSeBM*pkHeight,pkWidth,pkHeight));
-}
-Poker* Poker::copy(){
-	Poker* pk;
-	if(m_huaSe != Gui)
-		pk = Poker::create("res/poker.png",CCRect(this->m_num*pkWidth,this->m_huaSe*pkHeight,pkWidth,pkHeight));
-	else
-		pk = Poker::create("res/poker.png",CCRect((this->m_num-XiaoGui)*pkWidth,this->m_huaSe*pkHeight,pkWidth,pkHeight));
-	pk->m_isDianJi = this->m_isDianJi;
-	pk->m_isSelect = this->m_isSelect;
-	pk->setHuaSe(this->getHuaSe());
-	pk->setNum(this->getNum());
-	pk->m_gameMain = this->m_gameMain;
-	return pk;
-}
-void Poker::setTouchPriority(int num){
-	_eventDispatcher->setPriority(touchListener, num);
-}
-void Poker::SelectPkLuTou(){
-	//添加要出的牌
-	this->m_isSelect = true;
-	this->setPosition(ccp(getPositionX(),getPositionY()+10));
-	m_gameMain->getArrPlayerOut()->addObject(this);
-	m_gameMain->PlayerOutPaiXu(m_gameMain->getArrPlayerOut());
-}
-void Poker::SelectPkSuoTou(){
-	//从出牌中移除该牌
-	m_isSelect = false;
-	this->setPosition(ccp(getPositionX(),getPositionY()-10));
-	m_gameMain->getArrPlayerOut()->removeObject(this);
 }

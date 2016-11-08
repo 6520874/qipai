@@ -52,6 +52,7 @@ void Player::updatePkWeiZhi()
 		{
 			//pk->showFront();
 			//	pk->showLast();
+			pk->setTexture("cardbg.png");
 			pk->setPosition(ccp(x+num*pkJianJu+pkWidth/2,y));
 		}
 		else if(m_iPlayerClass == 2)

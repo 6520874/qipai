@@ -71,18 +71,17 @@ bool GameScene::createPoker()
 		Size size = Director::getInstance()->getWinSize();
 		Poker* pk;
 		//创建50个牌
-		for (int i=0; i<5; ++i)
-		{
-			for (int j=0; j<10; ++j)
+
+			for (int j=1; j<54; ++j)
 			{
-				__String *s = __String::createWithFormat("%d.png",i+1);
+				__String *s = __String::createWithFormat("%d.png",j);
 				pk = pk->create(s->getCString());
 				pk->setScale(0.1);
 				pk->setPosition(Vec2(size.width/2,size.height/2));
 				this->addChild(pk);
 				this->m_arrPokers->addObject(pk);
 			}
-		}
+		
 		
 		//创建道阴阳三张牌
 		isRet = true;
@@ -94,7 +93,7 @@ bool GameScene::xiPai(){
 	bool isRet = false;
 	do 
 	{
-		for(int i=0; i<50; ++i)
+		for(int i=0; i<53; ++i)
 		{
 			Poker* pk1 = (Poker*)m_arrPokers->randomObject();
 			Poker* pk2 = (Poker*)m_arrPokers->randomObject();

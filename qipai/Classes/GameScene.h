@@ -28,7 +28,9 @@ private:
 	bool initPlayer();//初始化玩家信息
 	bool createPoker();
 	void SendPk();
+
 	int m_iState;//当前状态 0：发牌状态  2：出牌状态 3：结果状态
+	Sprite *m_pBg;
 
 	__Array* m_arrPokers;//所有的牌
 

@@ -8,19 +8,16 @@ GameScene::GameScene(){
 	m_arrPokers = __Array::create();
 	m_player = new Player();
 	m_npcOne = new Player();
-
+	m_pBg = NULL;
 	m_arrPokers->retain();
 	m_iState = 0;
 	m_iSendPk = 0;
-
 }
 GameScene::~GameScene(){
 	CC_SAFE_DELETE(m_player);
 	CC_SAFE_DELETE(m_npcOne);
 	CC_SAFE_RELEASE(m_arrPokers);
-
 }
-
 
 Scene* GameScene::scene(){
 	Scene* scene = Scene::create();
@@ -60,6 +57,8 @@ bool GameScene::initBackGround(){
 		this->addChild(bk,0);
 
 		bk->setPosition(size.width/2,size.height/2);
+		m_pBg = bk;
+
 		isRet = true;
 	} while (0);
 	return isRet;
@@ -84,8 +83,7 @@ bool GameScene::createPoker()
 				this->m_arrPokers->addObject(pk);
 			}
 		
-		
-		//创建道阴阳三张牌
+	
 		isRet = true;
 	} while (0);
 	return isRet;
@@ -109,13 +107,17 @@ bool GameScene::xiPai(){
 bool GameScene::initPlayer(){
 	Size size = Director::getInstance()->getVisibleSize();
 	//设置主玩家的位置
+	srand((unsigned int)time(0)); //设置随机种子
+
 	m_player->setPoint(ccp(size.width/2,100));
 	m_player->setPlayerClass(0);
+
+	m_player->initPlayerPlace(m_pBg, random(1,9));
 
 	//设置电脑1的位置
 	m_npcOne->setPoint(ccp(size.width/2,size.height*0.95));
 	m_npcOne->setPlayerClass(1);
-	
+	m_npcOne->initPlayerPlace(m_pBg, random(1,9));
 	return true;
 }
 
@@ -140,7 +142,7 @@ void GameScene::SendPk(){
 	CCCallFuncND* func;
 	float time = 0.05;
 
-	if(m_iSendPk<10)
+	if(m_iSendPk<8)
 	{
 		pk = (Poker*)m_arrPokers->objectAtIndex(++m_iSendPk);
 		MovePk(m_player,pk);
@@ -168,6 +170,4 @@ void GameScene::MovePk(Player* play,Poker* pk)
 void GameScene::func(CCNode* pSender, void* pData){
 	Player* play = (Player*)pData;
 	play->updatePkWeiZhi();
-	//m_isSend = true;
-
 }

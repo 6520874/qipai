@@ -66,12 +66,6 @@
     </ResourceCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\Classes\Player.cpp.bak">
-      <Filter>src</Filter>
-    </None>
-    <None Include="..\Classes\Tool.cpp.bak">
-      <Filter>src</Filter>
-    </None>
     <None Include="..\Classes\Tool.h.bak">
       <Filter>src</Filter>
     </None>

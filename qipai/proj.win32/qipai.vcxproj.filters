@@ -18,6 +18,9 @@
     <ClCompile Include="..\Classes\AppDelegate.cpp">
       <Filter>src</Filter>
     </ClCompile>
+    <ClCompile Include="..\Classes\HelloWorldScene.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
     <ClCompile Include="..\Classes\GameScene.cpp">
       <Filter>src</Filter>
     </ClCompile>
@@ -27,12 +30,18 @@
     <ClCompile Include="..\Classes\Poker.cpp">
       <Filter>src</Filter>
     </ClCompile>
+    <ClCompile Include="..\Classes\Tool.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
       <Filter>win32</Filter>
     </ClInclude>
     <ClInclude Include="..\Classes\AppDelegate.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\HelloWorldScene.h">
       <Filter>src</Filter>
     </ClInclude>
     <ClInclude Include="..\Classes\GameScene.h">
@@ -47,174 +56,31 @@
     <ClInclude Include="..\Classes\Poker.h">
       <Filter>src</Filter>
     </ClInclude>
+    <ClInclude Include="..\Classes\Tool.h">
+      <Filter>src</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <Image Include="..\Resources\res\1.png">
+    <ResourceCompile Include="game.rc">
       <Filter>resource</Filter>
-    </Image>
-    <Image Include="..\Resources\res\2.png">
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Classes\Player.cpp.bak">
+      <Filter>src</Filter>
+    </None>
+    <None Include="..\Classes\Tool.cpp.bak">
+      <Filter>src</Filter>
+    </None>
+    <None Include="..\Classes\Tool.h.bak">
+      <Filter>src</Filter>
+    </None>
+    <None Include="..\Resources\res\MainScene.csb">
       <Filter>resource</Filter>
-    </Image>
-    <Image Include="..\Resources\res\3.png">
-      <Filter>resource</Filter>
-    </Image>
-    <Image Include="..\Resources\res\4.png">
-      <Filter>resource</Filter>
-    </Image>
-    <Image Include="..\Resources\res\5.png">
-      <Filter>resource</Filter>
-    </Image>
-    <Image Include="..\Resources\res\6.png">
-      <Filter>resource</Filter>
-    </Image>
-    <Image Include="..\Resources\res\7.png">
-      <Filter>resource</Filter>
-    </Image>
-    <Image Include="..\Resources\res\8.png">
-      <Filter>resource</Filter>
-    </Image>
-    <Image Include="..\Resources\res\9.png">
-      <Filter>resource</Filter>
-    </Image>
-    <Image Include="..\Resources\res\10.png">
-      <Filter>resource</Filter>
-    </Image>
-    <Image Include="..\Resources\res\11.png">
-      <Filter>resource</Filter>
-    </Image>
-    <Image Include="..\Resources\res\12.png">
-      <Filter>resource</Filter>
-    </Image>
-    <Image Include="..\Resources\res\13.png">
-      <Filter>resource</Filter>
-    </Image>
-    <Image Include="..\Resources\res\14.png">
-      <Filter>resource</Filter>
-    </Image>
-    <Image Include="..\Resources\res\15.png">
-      <Filter>resource</Filter>
-    </Image>
-    <Image Include="..\Resources\res\16.png">
-      <Filter>resource</Filter>
-    </Image>
-    <Image Include="..\Resources\res\17.png">
-      <Filter>resource</Filter>
-    </Image>
-    <Image Include="..\Resources\res\18.png">
-      <Filter>resource</Filter>
-    </Image>
-    <Image Include="..\Resources\res\19.png">
-      <Filter>resource</Filter>
-    </Image>
-    <Image Include="..\Resources\res\20.png">
-      <Filter>resource</Filter>
-    </Image>
-    <Image Include="..\Resources\res\21.png">
-      <Filter>resource</Filter>
-    </Image>
-    <Image Include="..\Resources\res\22.png">
-      <Filter>resource</Filter>
-    </Image>
-    <Image Include="..\Resources\res\23.png">
-      <Filter>resource</Filter>
-    </Image>
-    <Image Include="..\Resources\res\24.png">
-      <Filter>resource</Filter>
-    </Image>
-    <Image Include="..\Resources\res\25.png">
-      <Filter>resource</Filter>
-    </Image>
-    <Image Include="..\Resources\res\26.png">
-      <Filter>resource</Filter>
-    </Image>
-    <Image Include="..\Resources\res\27.png">
-      <Filter>resource</Filter>
-    </Image>
-    <Image Include="..\Resources\res\28.png">
-      <Filter>resource</Filter>
-    </Image>
-    <Image Include="..\Resources\res\29.png">
-      <Filter>resource</Filter>
-    </Image>
-    <Image Include="..\Resources\res\30.png">
-      <Filter>resource</Filter>
-    </Image>
-    <Image Include="..\Resources\res\31.png">
-      <Filter>resource</Filter>
-    </Image>
-    <Image Include="..\Resources\res\32.png">
-      <Filter>resource</Filter>
-    </Image>
-    <Image Include="..\Resources\res\33.png">
-      <Filter>resource</Filter>
-    </Image>
-    <Image Include="..\Resources\res\34.png">
-      <Filter>resource</Filter>
-    </Image>
-    <Image Include="..\Resources\res\35.png">
-      <Filter>resource</Filter>
-    </Image>
-    <Image Include="..\Resources\res\36.png">
-      <Filter>resource</Filter>
-    </Image>
-    <Image Include="..\Resources\res\37.png">
-      <Filter>resource</Filter>
-    </Image>
-    <Image Include="..\Resources\res\38.png">
-      <Filter>resource</Filter>
-    </Image>
-    <Image Include="..\Resources\res\39.png">
-      <Filter>resource</Filter>
-    </Image>
-    <Image Include="..\Resources\res\40.png">
-      <Filter>resource</Filter>
-    </Image>
-    <Image Include="..\Resources\res\41.png">
-      <Filter>resource</Filter>
-    </Image>
-    <Image Include="..\Resources\res\42.png">
-      <Filter>resource</Filter>
-    </Image>
-    <Image Include="..\Resources\res\43.png">
-      <Filter>resource</Filter>
-    </Image>
-    <Image Include="..\Resources\res\44.png">
-      <Filter>resource</Filter>
-    </Image>
-    <Image Include="..\Resources\res\45.png">
-      <Filter>resource</Filter>
-    </Image>
-    <Image Include="..\Resources\res\46.png">
-      <Filter>resource</Filter>
-    </Image>
-    <Image Include="..\Resources\res\47.png">
-      <Filter>resource</Filter>
-    </Image>
-    <Image Include="..\Resources\res\48.png">
-      <Filter>resource</Filter>
-    </Image>
-    <Image Include="..\Resources\res\49.png">
-      <Filter>resource</Filter>
-    </Image>
-    <Image Include="..\Resources\res\50.png">
-      <Filter>resource</Filter>
-    </Image>
-    <Image Include="..\Resources\res\51.png">
-      <Filter>resource</Filter>
-    </Image>
-    <Image Include="..\Resources\res\52.png">
-      <Filter>resource</Filter>
-    </Image>
-    <Image Include="..\Resources\res\53.png">
-      <Filter>resource</Filter>
-    </Image>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
     <Image Include="..\Resources\res\bk.png">
-      <Filter>resource</Filter>
-    </Image>
-    <Image Include="..\Resources\res\bk2.png">
-      <Filter>resource</Filter>
-    </Image>
-    <Image Include="..\Resources\res\cardbg.png">
       <Filter>resource</Filter>
     </Image>
     <Image Include="..\Resources\res\HelloWorld.png">
@@ -223,11 +89,6 @@
     <Image Include="..\Resources\res\poker.png">
       <Filter>resource</Filter>
     </Image>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="..\Resources\res\MainScene.csb">
-      <Filter>resource</Filter>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <Xml Include="..\Resources\res\strings.xml">

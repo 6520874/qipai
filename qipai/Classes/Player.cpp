@@ -1,60 +1,16 @@
 #include "Player.h"
 #include "Poker.h"
-#include <stdio.h>
-
-Player::Player()
+Player::Player():m_isCall(false),m_iCallNum(0),m_isDiZhu(false),m_isOutPk(false)
 {
-	m_arrPk = __Array::create();
+	m_arrPk = CCArray::create();
 	m_arrPk->retain();
-
 }
 
 Player::~Player()
 {
 	CC_SAFE_RELEASE(m_arrPk);
-
 }
-
-void Player::initPlayerPlace(Node *parent,int random2)
-{
-
-	__String  str = "q1.png";
-
-	if(m_iPlayerClass==1)
-	{
-		str = "q2.png";
-	}
-	Sprite *pPlayer = Sprite::create(str.getCString());
-	pPlayer->setScale(1);
-
-	 Size size = parent->getContentSize();
-
-	 m_iWeizhi = random2;
-
-	 switch (random2)
-	 {
-	 case 1:  
-		 pPlayer->setPosition(size.width*0.2,size.height*0.8);  break;
-	 case 2: pPlayer->setPosition(size.width*0.5,size.height*0.8);  break; break;
-	 case 3:  pPlayer->setPosition(size.width*0.8,size.height*0.8);  break;break;
-	 case 4:  pPlayer->setPosition(size.width*0.2,size.height*0.6);break;
-     case 5:  pPlayer->setPosition(size.width*0.5,size.height*0.6);break;
-	 case 6:  pPlayer->setPosition(size.width*0.8,size.height*0.6);break;
-	 case 7:  pPlayer->setPosition(size.width*0.2,size.height*0.2);break;
-	 case 8:  pPlayer->setPosition(size.width*0.5,size.height*0.2);break;
-	 case 9:  pPlayer->setPosition(size.width*0.8,size.height*0.2);break;
-	 default:
-		 break;
-	 }
-
-
-
-	 parent->addChild(pPlayer);
-
-
-}
-void Player::updatePkWeiZhi()
-{
+void Player::updatePkWeiZhi(){
 	CCSize size = CCDirector::sharedDirector()->getVisibleSize();
 	int x,y;
 	if(m_iPlayerClass == 0 || m_iPlayerClass == 3)
@@ -64,7 +20,7 @@ void Player::updatePkWeiZhi()
 	}
 	else if(m_iPlayerClass == 1 || m_iPlayerClass == 4 || m_iPlayerClass == 5)
 	{
-		x =size.width/2-((m_arrPk->count()-1)*pkJianJu+pkWidth)/2;
+		x = m_point.x;
 		y = m_point.y;
 	}
 	else if(m_iPlayerClass == 2)
@@ -74,18 +30,32 @@ void Player::updatePkWeiZhi()
 	}
 	int num = 0;
 	CCObject* object;
-
+	//对牌进行排序
+	if(m_iPlayerClass != 3 && m_iPlayerClass != 4 && m_iPlayerClass != 5)
+		for(int i=0; m_arrPk->count()!=0 && i<m_arrPk->count()-1; ++i)
+		{
+			for(int j=0; j<m_arrPk->count()-1-i; ++j)
+			{
+				Poker* pk1 = (Poker*)m_arrPk->objectAtIndex(j);
+				Poker* pk2 = (Poker*)m_arrPk->objectAtIndex(j+1);
+				if(pk1->getNum() < pk2->getNum())
+					m_arrPk->exchangeObject(pk1,pk2);
+			}
+		}
 	//更新位置
 	CCARRAY_FOREACH(m_arrPk,object){
 		Poker* pk = (Poker*)object;
 		if (m_iPlayerClass == 0 || m_iPlayerClass == 3)
 		{
+			pk->showFront();
 			pk->setPosition(ccp(x+num*pkJianJu+pkWidth/2,y));
 		}
-		else if(m_iPlayerClass == 1)
-		{	
-			pk->setTexture("cardbg.png");
-			pk->setPosition(ccp(x+num*pkJianJu+pkWidth/2,y));
+		else if(m_iPlayerClass == 1 || m_iPlayerClass == 4 || m_iPlayerClass == 5)
+		{
+			pk->showFront();
+			if(m_iPlayerClass == 1)
+				pk->showLast();
+			pk->setPosition(ccp(x,y-num*pkJianJu));
 		}
 		else if(m_iPlayerClass == 2)
 		{
@@ -93,5 +63,17 @@ void Player::updatePkWeiZhi()
 		}
 		++num;
 	}
-
+	//改变牌的z值或牌的触摸优先
+	int i=m_arrPk->count()-1;
+	CCARRAY_FOREACH(m_arrPk,object){
+		Poker* pk = (Poker*)object;
+		//改变z值
+		if (m_iPlayerClass == 1 || m_iPlayerClass == 4 || m_iPlayerClass == 5)
+			pk->setZOrder(size.height - pk->getPositionY());
+		if (m_iPlayerClass == 0 || m_iPlayerClass == 3)
+			pk->setZOrder(pk->getPositionX());
+		//改变优先级
+	/*	Poker* pk1 = (Poker *)m_arrPk->objectAtIndex(i--);
+		pk->setTouchPriority(pk1->getPositionX());*/
+	}
 }

@@ -48,23 +48,25 @@ void Player::updatePkWeiZhi(){
 		if (m_iPlayerClass == 0 || m_iPlayerClass == 3)
 		{
 			pk->showFront();
-			pk->setPosition(ccp(x+num*pkJianJu+pkWidth/2,y));
+			pk->setPosition(Vec2(x+num*pkJianJu+pkWidth/2,y));
 		}
 		else if(m_iPlayerClass == 1 || m_iPlayerClass == 4 || m_iPlayerClass == 5)
 		{
 			pk->showFront();
 			if(m_iPlayerClass == 1)
 				pk->showLast();
-			pk->setPosition(ccp(x,y-num*pkJianJu));
+			pk->setPosition(Vec2(x,y-num*pkJianJu));
 		}
 		else if(m_iPlayerClass == 2)
 		{
-			pk->setPosition(ccp(x+num*pkJianJu+num*pkWidth+pkWidth/2,y));
+			pk->setPosition(Vec2(x+num*pkJianJu+num*pkWidth+pkWidth/2,y));
 		}
 		++num;
 	}
 	//改变牌的z值或牌的触摸优先
-	int i=m_arrPk->count()-1;
+	
+	
+    int i=m_arrPk->count()-1;
 	CCARRAY_FOREACH(m_arrPk,object){
 		Poker* pk = (Poker*)object;
 		//改变z值

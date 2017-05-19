@@ -1,0 +1,56 @@
+<Solution>
+  <PropertyGroup Name="qipai" Version="3.10.0.0" Type="CocosStudio" />
+  <SolutionFolder>
+    <Group ctype="ResourceGroup">
+      <RootFolder Name=".">
+        <Folder Name="res">
+          <Image Name="atknormal.png" />
+          <Image Name="atkpress.png" />
+          <Image Name="bk.png" />
+          <Image Name="bk2.png" />
+          <Image Name="cardbg.png" />
+          <Image Name="clock.png" />
+          <Image Name="HelloWorld.png" />
+          <Image Name="HP.png" />
+          <Image Name="huixuenormal.png" />
+          <Image Name="huixuepress.png" />
+          <Image Name="ignorenormal.png" />
+          <Image Name="ignorepress.png" />
+          <File Name="MainScene.csb" />
+          <Image Name="poker.png" />
+          <Image Name="q1.png" />
+          <Image Name="q12.png" />
+          <Image Name="q2.png" />
+          <Image Name="q22.png" />
+          <Image Name="q3.png" />
+          <Image Name="q32.png" />
+          <Image Name="q4.png" />
+          <Image Name="q42.png" />
+          <Image Name="shuxuenormal.png" />
+          <Image Name="shuxueoress.png" />
+          <File Name="strings.xml" />
+          <Image Name="wuxin.png" />
+          <Image Name="zhuomain.png" />
+        </Folder>
+        <TTF Name="arial.ttf" />
+        <Image Name="atkpress.png" />
+        <Image Name="bk.png" />
+        <Image Name="clock.png" />
+        <Image Name="give.png" />
+        <Image Name="HP.png" />
+        <Image Name="huixuepress.png" />
+        <Image Name="jiepai.png" />
+        <Project Name="Layer.csd" Type="Layer" />
+        <Project Name="Layer1.csd" Type="Layer" />
+        <Project Name="MainScene.csd" Type="Scene" />
+        <Image Name="q1.png" />
+        <Image Name="q2.png" />
+        <Image Name="set.png" />
+        <Image Name="wanfa2.jpg" />
+        <Image Name="wanfa3.jpg" />
+        <Image Name="wuxin.png" />
+        <Image Name="yiwei.png" />
+      </RootFolder>
+    </Group>
+  </SolutionFolder>
+</Solution>

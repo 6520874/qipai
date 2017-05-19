@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root>
+	<Data ID="1" Name1="对手的攻击!" Name2="对你造成%d点血!" Name3="我方的攻击!" Name4="对对手造成%d点血"
+    tip1="土" tip2= "火" tip3="木" tip4="水" tip5="金"/>
+    
+    <Data ID="2" tip1="土" tip2= "火" tip3="木" tip4="水" tip5="金"/>
+
+	</Root>

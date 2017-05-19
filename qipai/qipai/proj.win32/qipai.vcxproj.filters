@@ -1,0 +1,359 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="win32">
+      <UniqueIdentifier>{84a8ebd7-7cf0-47f6-b75e-d441df67da40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resource">
+      <UniqueIdentifier>{715254bc-d70b-4ec5-bf29-467dd3ace079}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{bb6c862e-70e9-49d9-81b7-3829a6f50471}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resource\res">
+      <UniqueIdentifier>{48d8ba29-ae65-484b-b3e1-3f8d83d856f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Script">
+      <UniqueIdentifier>{18da6717-5318-4e2e-8789-055f24e11ad8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\AppDelegate.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameScene.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Player.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Poker.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Qipan.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\WindowInfo.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Convert.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ScenceManager.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Script\ScriptData.cpp">
+      <Filter>src\Script</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Script\ScriptXMLparse.cpp">
+      <Filter>src\Script</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Script\utility.cpp">
+      <Filter>src\Script</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="main.h">
+      <Filter>win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\AppDelegate.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameScene.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Global.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Player.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Poker.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Qipan.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\WindowInfo.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\FvSingleton.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Convert.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ScenceManager.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Script\ScriptData.h">
+      <Filter>src\Script</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Script\ScriptXMLparse.h">
+      <Filter>src\Script</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Script\StructType.h">
+      <Filter>src\Script</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Script\utility.h">
+      <Filter>src\Script</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Script\UtilityBase.h">
+      <Filter>src\Script</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\Resources\res\0.png">
+      <Filter>resource\res</Filter>
+    </Image>
+    <Image Include="..\Resources\res\1.png">
+      <Filter>resource\res</Filter>
+    </Image>
+    <Image Include="..\Resources\res\2.png">
+      <Filter>resource\res</Filter>
+    </Image>
+    <Image Include="..\Resources\res\3.png">
+      <Filter>resource\res</Filter>
+    </Image>
+    <Image Include="..\Resources\res\4.png">
+      <Filter>resource\res</Filter>
+    </Image>
+    <Image Include="..\Resources\res\5.png">
+      <Filter>resource\res</Filter>
+    </Image>
+    <Image Include="..\Resources\res\6.png">
+      <Filter>resource\res</Filter>
+    </Image>
+    <Image Include="..\Resources\res\7.png">
+      <Filter>resource\res</Filter>
+    </Image>
+    <Image Include="..\Resources\res\8.png">
+      <Filter>resource\res</Filter>
+    </Image>
+    <Image Include="..\Resources\res\9.png">
+      <Filter>resource\res</Filter>
+    </Image>
+    <Image Include="..\Resources\res\10.png">
+      <Filter>resource\res</Filter>
+    </Image>
+    <Image Include="..\Resources\res\11.png">
+      <Filter>resource\res</Filter>
+    </Image>
+    <Image Include="..\Resources\res\12.png">
+      <Filter>resource\res</Filter>
+    </Image>
+    <Image Include="..\Resources\res\13.png">
+      <Filter>resource\res</Filter>
+    </Image>
+    <Image Include="..\Resources\res\14.png">
+      <Filter>resource\res</Filter>
+    </Image>
+    <Image Include="..\Resources\res\15.png">
+      <Filter>resource\res</Filter>
+    </Image>
+    <Image Include="..\Resources\res\16.png">
+      <Filter>resource\res</Filter>
+    </Image>
+    <Image Include="..\Resources\res\17.png">
+      <Filter>resource\res</Filter>
+    </Image>
+    <Image Include="..\Resources\res\18.png">
+      <Filter>resource\res</Filter>
+    </Image>
+    <Image Include="..\Resources\res\19.png">
+      <Filter>resource\res</Filter>
+    </Image>
+    <Image Include="..\Resources\res\20.png">
+      <Filter>resource\res</Filter>
+    </Image>
+    <Image Include="..\Resources\res\21.png">
+      <Filter>resource\res</Filter>
+    </Image>
+    <Image Include="..\Resources\res\22.png">
+      <Filter>resource\res</Filter>
+    </Image>
+    <Image Include="..\Resources\res\23.png">
+      <Filter>resource\res</Filter>
+    </Image>
+    <Image Include="..\Resources\res\24.png">
+      <Filter>resource\res</Filter>
+    </Image>
+    <Image Include="..\Resources\res\25.png">
+      <Filter>resource\res</Filter>
+    </Image>
+    <Image Include="..\Resources\res\26.png">
+      <Filter>resource\res</Filter>
+    </Image>
+    <Image Include="..\Resources\res\27.png">
+      <Filter>resource\res</Filter>
+    </Image>
+    <Image Include="..\Resources\res\28.png">
+      <Filter>resource\res</Filter>
+    </Image>
+    <Image Include="..\Resources\res\29.png">
+      <Filter>resource\res</Filter>
+    </Image>
+    <Image Include="..\Resources\res\30.png">
+      <Filter>resource\res</Filter>
+    </Image>
+    <Image Include="..\Resources\res\31.png">
+      <Filter>resource\res</Filter>
+    </Image>
+    <Image Include="..\Resources\res\32.png">
+      <Filter>resource\res</Filter>
+    </Image>
+    <Image Include="..\Resources\res\33.png">
+      <Filter>resource\res</Filter>
+    </Image>
+    <Image Include="..\Resources\res\34.png">
+      <Filter>resource\res</Filter>
+    </Image>
+    <Image Include="..\Resources\res\35.png">
+      <Filter>resource\res</Filter>
+    </Image>
+    <Image Include="..\Resources\res\36.png">
+      <Filter>resource\res</Filter>
+    </Image>
+    <Image Include="..\Resources\res\37.png">
+      <Filter>resource\res</Filter>
+    </Image>
+    <Image Include="..\Resources\res\38.png">
+      <Filter>resource\res</Filter>
+    </Image>
+    <Image Include="..\Resources\res\39.png">
+      <Filter>resource\res</Filter>
+    </Image>
+    <Image Include="..\Resources\res\40.png">
+      <Filter>resource\res</Filter>
+    </Image>
+    <Image Include="..\Resources\res\41.png">
+      <Filter>resource\res</Filter>
+    </Image>
+    <Image Include="..\Resources\res\42.png">
+      <Filter>resource\res</Filter>
+    </Image>
+    <Image Include="..\Resources\res\43.png">
+      <Filter>resource\res</Filter>
+    </Image>
+    <Image Include="..\Resources\res\44.png">
+      <Filter>resource\res</Filter>
+    </Image>
+    <Image Include="..\Resources\res\45.png">
+      <Filter>resource\res</Filter>
+    </Image>
+    <Image Include="..\Resources\res\46.png">
+      <Filter>resource\res</Filter>
+    </Image>
+    <Image Include="..\Resources\res\47.png">
+      <Filter>resource\res</Filter>
+    </Image>
+    <Image Include="..\Resources\res\48.png">
+      <Filter>resource\res</Filter>
+    </Image>
+    <Image Include="..\Resources\res\49.png">
+      <Filter>resource\res</Filter>
+    </Image>
+    <Image Include="..\Resources\res\50.png">
+      <Filter>resource\res</Filter>
+    </Image>
+    <Image Include="..\Resources\res\51.png">
+      <Filter>resource\res</Filter>
+    </Image>
+    <Image Include="..\Resources\res\52.png">
+      <Filter>resource\res</Filter>
+    </Image>
+    <Image Include="..\Resources\res\atknormal.png">
+      <Filter>resource\res</Filter>
+    </Image>
+    <Image Include="..\Resources\res\atkpress.png">
+      <Filter>resource\res</Filter>
+    </Image>
+    <Image Include="..\Resources\res\clock.png">
+      <Filter>resource\res</Filter>
+    </Image>
+    <Image Include="..\Resources\res\HelloWorld.png">
+      <Filter>resource\res</Filter>
+    </Image>
+    <Image Include="..\Resources\res\HP.png">
+      <Filter>resource\res</Filter>
+    </Image>
+    <Image Include="..\Resources\res\huixuenormal.png">
+      <Filter>resource\res</Filter>
+    </Image>
+    <Image Include="..\Resources\res\huixuepress.png">
+      <Filter>resource\res</Filter>
+    </Image>
+    <Image Include="..\Resources\res\ignorenormal.png">
+      <Filter>resource\res</Filter>
+    </Image>
+    <Image Include="..\Resources\res\ignorepress.png">
+      <Filter>resource\res</Filter>
+    </Image>
+    <Image Include="..\Resources\res\q1.png">
+      <Filter>resource\res</Filter>
+    </Image>
+    <Image Include="..\Resources\res\q2.png">
+      <Filter>resource\res</Filter>
+    </Image>
+    <Image Include="..\Resources\res\q3.png">
+      <Filter>resource\res</Filter>
+    </Image>
+    <Image Include="..\Resources\res\q4.png">
+      <Filter>resource\res</Filter>
+    </Image>
+    <Image Include="..\Resources\res\q12.png">
+      <Filter>resource\res</Filter>
+    </Image>
+    <Image Include="..\Resources\res\q22.png">
+      <Filter>resource\res</Filter>
+    </Image>
+    <Image Include="..\Resources\res\q32.png">
+      <Filter>resource\res</Filter>
+    </Image>
+    <Image Include="..\Resources\res\q42.png">
+      <Filter>resource\res</Filter>
+    </Image>
+    <Image Include="..\Resources\res\shuxuenormal.png">
+      <Filter>resource\res</Filter>
+    </Image>
+    <Image Include="..\Resources\res\shuxueoress.png">
+      <Filter>resource\res</Filter>
+    </Image>
+    <Image Include="..\Resources\res\wuxin.png">
+      <Filter>resource\res</Filter>
+    </Image>
+    <Image Include="..\Resources\res\zhuomain.png">
+      <Filter>resource\res</Filter>
+    </Image>
+    <Image Include="..\Resources\res\defend.png">
+      <Filter>resource\res</Filter>
+    </Image>
+    <Image Include="..\Resources\res\giveup.png">
+      <Filter>resource\res</Filter>
+    </Image>
+    <Image Include="..\Resources\res\give.png">
+      <Filter>resource\res</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Resources\res\MainScene.csb">
+      <Filter>resource</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="game.rc">
+      <Filter>resource</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="..\Resources\res\strings.xml">
+      <Filter>resource\res</Filter>
+    </Xml>
+    <Xml Include="..\Resources\res\Fish_ArmatureCFG.xml">
+      <Filter>resource\res</Filter>
+    </Xml>
+  </ItemGroup>
+</Project>

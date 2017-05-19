@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "33D2C10CF1F9826F0CB5977310078063D038A0BD",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "33D2C10CF1F9826F0CB5977310078063D038A0BD" : 0,
+    "007BC424FDB62A3E4AFDB615F8C1363157D147C2" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "B9D178BA-C627-4011-BCDB-9548370401AB",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "33D2C10CF1F9826F0CB5977310078063D038A0BD" : "jiugongjue\/",
+    "007BC424FDB62A3E4AFDB615F8C1363157D147C2" : "qipai\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "qipai",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "qipai\/proj.ios_mac\/qipai.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/6520874\/qipai",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "007BC424FDB62A3E4AFDB615F8C1363157D147C2"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/code.csdn.net\/pengfeicfan\/jiugongjue.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "33D2C10CF1F9826F0CB5977310078063D038A0BD"
+    }
+  ]
+}

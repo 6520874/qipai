@@ -1,0 +1,19 @@
+
+/*0-9 土
+10-19 火
+20-29 木
+30- 39水
+40-49 金
+50-52 道阴阳
+
+*/
+
+ <root>
+ <ScriptValueStr Key="keyopen" Value="0"/>  //总开关，1的话下面设置生效
+	<ScriptValueStr Key="handpk" Value="50,10,31,28,11,22,13,24"/> //牌的情况
+    <ScriptValueStr Key="weizhi1" Value="7"/>  //玩家的位置
+    <ScriptValueStr Key="weizhi2" Value="5"/>//电脑的位置
+    <ScriptValueStr Key="hp1" Value="7"/> //玩家的血量，满血为9
+     <ScriptValueStr Key="hp2" Value="7"/> //电脑的血量，满血位9
+ </root>
+ 

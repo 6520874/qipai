@@ -1,0 +1,25 @@
+
+/*0-9 Õ¡
+10-19 ª
+20-29 ƒæ
+30- 39ÀÆ
+40-49 Ω
+50-52 µ¿“ı—Ù
+
+*/
+
+ <root>
+ <ScriptValueStr Key="keyopen" Value="0"/>  //◊‹ø™πÿ£¨1µƒª∞œ¬√Ê…Ë÷√…˙–ß
+<ScriptValueStr Key="handpk" Value="40,20,41,21,11,12,13,14"/> //≈∆µƒ«Èøˆ40 «Œ“∑Ω£¨20 «µÁƒ‘,“¿¥Œ¿‡Õ∆
+    <ScriptValueStr Key="weizhi1" Value="8"/>  //ÕÊº“µƒŒª÷√
+    <ScriptValueStr Key="weizhi2" Value="4"/>//µÁƒ‘µƒŒª÷√
+    <ScriptValueStr Key="hp1" Value="9"/> //ÕÊº“µƒ—™¡ø£¨¬˙—™Œ™9
+     <ScriptValueStr Key="hp2" Value="9"/> //µÁƒ‘µƒ—™¡ø£¨¬˙—™Œª9
+
+     -----------------------------------------------------------------------
+    <ScriptValueStr Key="eattack" Value="对方的攻击!"/> //“ª–©÷–Œƒ≈‰÷√
+    <ScriptValueStr Key="mattack" Value="我方的攻击!"/> //“ª–©÷–Œƒ≈‰÷√
+    <ScriptValueStr Key="attack1" Value="对你造成%d点血的伤害！"/> //“ª–©÷–Œƒ≈‰÷√
+     <ScriptValueStr Key="attack2" Value="对对手造成%d点血的伤害！"/> //“ª–©÷–Œƒ≈‰÷√
+ </root>
+ 

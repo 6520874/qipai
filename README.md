@@ -1,3 +1,7 @@
+
+<p align="center" >
+<img src="图片1.png" title="诛仙阵 logo" float=left>
+</p>
 # qipai
 
 一款易经题材游戏，appstore搜索诛仙阵
